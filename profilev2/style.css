@@ -1,0 +1,138 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; /* Updated font */
+    color: #5D4F4F; /* Dark brown text color */
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F5F5DC; /* Beige background color */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 16px;
+}
+
+/* Our Team Title */
+h1 {
+    font-size: 2.4em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Container holding the cards */
+.container {
+    display: flex;
+    justify-content: space-between; /* Ensure equal spacing between cards */
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1600px; /* Adjust the max width to accommodate all cards */
+    margin: 0 auto;
+    gap: 20px; /* Space between the cards */
+}
+
+/* Card Styling */
+.card {
+    position: relative;
+    width: 300px; /* Ensure all cards maintain this width */
+    background-color: #f7f5de; /* White background for cards */
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    margin: 56px 0; /* Adjust margin to separate rows on smaller screens */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 15px 35px -15px rgba(0, 0, 0, 0.5),
+    0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+p {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.name {
+    margin-top: 80px;
+    font-size: 1.4em;
+    color: #4E3B3B; /* Darker brown for names */
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+/* Tech Stack Styling */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.tech-stack .tech {
+    background-color: #E8DAB2; /* Lighter beige for tech stack items */
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 0.9em;
+    color: #5D4F4F; /* Dark brown text */
+}
+
+/* Social Media Buttons */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socials button {
+    background-color: #F5F5DC; /* Beige button */
+    border: 1px solid #D1C7A2; /* Slightly darker beige border */
+    padding: 10px 16px;
+    border-radius: 22px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.socials button:hover {
+    background-color: #E8DAB2; /* Darker beige on hover */
+    border: 1px solid #A89F8E; /* Darker beige border on hover */
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin: 20px 0;
+        width: 90%;
+    }
+}
