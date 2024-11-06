@@ -1,0 +1,135 @@
+/* Overall search page container */
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f5f5dc; /* Light beige background */
+}
+
+/* Header container */
+.line_contain {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 40px;
+    margin-top: 0;
+}
+
+.line_contain h1 {
+    font-size: 2.5rem;
+    color: #5f4b32; /* Dark beige-brown for header text */
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.search-diamond-line {
+    position: relative;
+    height: 3px;
+    background-color: #5f4b32; /* Dark beige-brown for the line */
+    width: 100%;
+    margin: 0 auto;
+}
+
+.search-diamond-line::before, 
+.search-diamond-line::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    width: 12px;
+    height: 12px;
+    background-color: #5f4b32;
+    transform: rotate(45deg); /* Create diamond shape */
+}
+
+.search-diamond-line::before {
+    left: -10px;
+}
+
+.search-diamond-line::after {
+    right: -10px;
+}
+
+/* Search page result grid */
+.search-page {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Each search result container */
+.search_container {
+    background-color: #f5f5dc; /* Beige background for cards */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.search_container:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Book image styling */
+.search-image {
+    height: 280px;
+    width: auto;
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s;
+}
+
+.search-image:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Book text details */
+.search_text {
+    text-align: center;
+    color: #5f4b32; /* Dark beige-brown text for details */
+}
+
+.search_text p {
+    margin: 8px 0;
+    font-size: 1.1rem;
+    color: #4b3f2f; /* Darker beige for better contrast */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Title and author font styling */
+.search_text p strong {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Rating text */
+.rating {
+    color: #d4a373; /* Golden beige for the rating color */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Responsive behavior */
+@media screen and (max-width: 768px) {
+    .search-page {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    .line_contain h1 {
+        font-size: 2rem;
+    }
+
+    .search_container {
+        padding: 12px;
+    }
+
+    .search-image {
+        height: 220px;
+    }
+}

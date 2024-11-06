@@ -1,0 +1,44 @@
+/* Chart container styling */
+.trending-chart-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .trending-chart-container h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .recharts-label {
+    font-size: 16px;
+    font-weight: bold;
+    fill: #333;
+    color: black;
+  }
+  
+  /* Recharts responsive styling */
+  .recharts-wrapper {
+    width: 100% !important;
+  }
+  
+  .recharts-tooltip-wrapper {
+    font-size: 14px;
+  }
+  
+  .recharts-legend-wrapper {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  @media (max-width: 768px) {
+    .trending-chart-container {
+      padding: 10px;
+    }
+  }
+  

@@ -1,0 +1,148 @@
+.home-container {
+    width: 100%;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc; 
+    font-family: 'Arial', sans-serif, 'Inika'; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.home-container h2 {
+   cursor: pointer; 
+   transform: scale(1.05);
+}
+.home-container:hover {
+    transition: 0.5s ease-in-out; 
+ }
+.welcome-section {
+    text-align: center;
+    margin: 30px 0; 
+}
+
+.welcome-section h1 {
+    font-family: 'Inika', serif;
+    font-size: 40px; 
+    color: #4b3f2f;
+    font-weight: bold;
+}
+
+.welcome-section p {
+    font-size: 20px; 
+    color: #6a5c43;
+    margin-top: 10px; 
+}
+
+.trending{
+    text-align: center;
+    margin-top: 10px; 
+    font-family: 'Inika', serif;
+    font-size: 40px; 
+    color: #4b3f2f;
+    font-weight: bold;
+}
+
+.home-diamond-line {
+    position: relative;
+    height: 2px;
+    background-color: #000;
+    width: 900px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .home-diamond-line::before, 
+  .home-diamond-line::after {
+    content: "";
+    position: absolute;
+    top: -3.25px; 
+    width: 8px; 
+    height: 8px; 
+    background-color: #000;
+    transform: rotate(45deg); 
+  }
+  
+  .home-diamond-line::before {
+    left: -2px;
+  }
+  
+  .home-diamond-line::after {
+    right: -2px; 
+  }
+
+.trending-section {
+    text-align: center;
+    margin: 40px 0; 
+    width: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+.trending-section h2 {
+    font-size: 30px; 
+    color: #4b3f2f;
+    font-weight: bold;
+    margin-bottom: 30px; 
+}
+
+
+.trending-books {
+    display: flex;
+    justify-content: center; 
+    gap: 100px;
+    padding: 20px 3%; 
+    max-width: 90%;
+    background: #C6C177;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-wrap: wrap; 
+    margin-bottom: 50px; 
+}
+
+.book {
+    text-align: center;
+    width: 150px; 
+    margin: 10px; 
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.book h3 {
+    font-size: 16px;
+    color: #4b3f2f;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.book p {
+    font-size: 14px;
+    color: #6a5c43;
+}
+
+
+@media (max-width: 768px) {
+    .trending-books {
+        padding: 20px 5%; 
+        gap: 20px; 
+    }
+
+    .book {
+        width: 120px; 
+    }
+
+    .welcome-section h1 {
+        font-size: 32px; 
+    }
+
+    .trending-section h2 {
+        font-size: 24px; 
+    }
+}

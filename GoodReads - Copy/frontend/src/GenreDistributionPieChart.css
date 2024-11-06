@@ -1,0 +1,44 @@
+/* GenreDistributionPieChart.css */
+
+.chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    max-width: 100%;
+  }
+  
+  .chart-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .chart-description {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px; /* Added margin for spacing */
+  }
+  
+  .recharts-tooltip-wrapper {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .recharts-legend-item {
+    font-size: 0.9em;
+    color: #555;
+  }
+  
+  .recharts-label-text {
+    font-size: 0.75em;
+    fill: #333;
+    font-weight: 500;
+  }
+  

@@ -1,0 +1,52 @@
+.con1 {
+    display: flex;
+    justify-content: left; 
+    background-color: #f5f0e1;
+    font-family: 'Georgia', serif;
+    margin-top: 1%;
+}
+
+.book-info {
+    display: flex;
+    width: 60%; 
+    align-items: flex-start;
+}
+
+.book-cover {
+    width: 150px;
+    height: 225px; 
+    margin-right: 20px; 
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.2s; 
+
+}
+.book-cover:hover{
+    transform: scale(1.05);
+}
+h2, h4 {
+    color: #000;
+    font-weight: normal;
+    margin: 0;
+}
+
+.progress {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+progress {
+    width: 80%;
+    margin-right: 10px;
+}
+
+.edit-pages {
+    width: 60px;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.book-details {
+    display: flex;
+    flex-direction: column;
+}
