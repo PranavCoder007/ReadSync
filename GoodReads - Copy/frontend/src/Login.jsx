@@ -6,8 +6,8 @@ import { useNavigate } from 'react-router-dom';
 import Cookies from 'js-cookie';
 import { UserContext } from './App';
 const Login = () => {
-    const url1= 'http://localhost:8000/Login';
-    const url2= 'http://localhost:8000/Register';
+    const url1= 'https://readsync-backend.onrender.com/Login';
+    const url2= 'https://readsync-backend.onrender.com/Register';
     const [action, setAction] = useState('');
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
@@ -17,7 +17,7 @@ const Login = () => {
     useEffect(() => {
         const checkJWT = async () => {
             try {
-              const response = await fetch('http://localhost:8000/User', {
+              const response = await fetch('https://readsync-backend.onrender.com/User', {
                 method: 'GET',
                 credentials: 'include',  // Include cookies with the request
               });
