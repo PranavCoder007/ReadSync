@@ -1,0 +1,150 @@
+
+
+.about{
+    margin-top: 0px;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #F5F5DC; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 16px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+    color: #5D4F4F; 
+}
+
+.team-head {
+    font-size: 2.6em;
+    color: #3B3B3B;
+    margin-bottom: 50px;
+}
+.motivation-head {
+    font-size: 2.6em;
+    color: #3B3B3B;
+    margin-bottom: 0px;
+}
+.motivation-paragraph {
+    font-size: 1.4em; 
+    line-height: 1.6; 
+    margin-bottom:  30px; 
+    text-align: center;
+    color: #5D4F4F; 
+    max-width: 800px; 
+    padding: 0; 
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1600px; 
+    margin: 0;
+    gap: 20px; 
+}
+
+
+.card {
+    position: relative;
+    width: 300px; 
+    background-color: #f7f5de; 
+    border-radius: 8px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+    padding: 16px;
+    margin: 56px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+}
+
+.card-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 10px 15px 35px -15px rgba(0, 0, 0, 0.5),
+    0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.card-image img {
+    width: 100%;
+    transform: scale(1.2);
+}
+
+.card p {
+    line-height: 24px;
+    letter-spacing: 0.5px;
+    margin-bottom: 12px;
+    text-align: center;
+    color: #5D4F4F;
+}
+
+.name {
+    margin-top: 80px;
+    font-size: 1.4em;
+    color: #4E3B3B; 
+    font-weight: bold;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+/* Tech Stack Styling */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+
+.tech-stack .tech {
+    background-color: #E8DAB2;
+    border-radius: 12px;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 0.9em;
+    color: #4E3B3B;
+}
+
+/* Social Media Buttons */
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.socials button {
+    background-color: #F5F5DC; 
+    border: 1px solid #D1C7A2; 
+    padding: 10px 16px;
+    border-radius: 22px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    color: #5D4F4F;
+}
+
+.socials button:hover {
+    background-color: #E8DAB2; 
+    border: 1px solid #A89F8E; 
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        margin: 20px 0;
+        width: 90%;
+    }
+}

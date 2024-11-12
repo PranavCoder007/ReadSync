@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&display=swap');
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5dc; 
+}
+.temp{
+  font-family: sans-serif;
+}
+
+.quote-section {
+  width: 25%; 
+  background-color: #C6C177; 
+  padding: 20px;
+  border-radius: 30px;
+  font-family: 'Imperial Script', cursive;
+  margin-top: 30px; 
+  margin-bottom: 20px;
+  text-align: center;
+  color: black; 
+  font-size: xx-large;
+  height: 600px;
+  position: sticky;
+  top: 160px;
+}
+.quote-section h3{
+  font-weight: 600;
+}
+.quote-section p{
+  margin-bottom: 10px;
+}
+.con {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f1e3; 
+  padding: 20px; 
+}
+
+
+.library-section {
+  width: 70%; 
+}
+.library-section hr{
+  margin-top: 14px ;
+  background-color: #000;
+  /* border: none; */
+  height: 2px;
+  width: 100%;
+}
+.library-section h1{
+  font-size: 50px;
+  color: black;
+  font-family: 'Imperial Script', serif;
+  font-weight: 200;
+  position: sticky;
+  top:130px;
+  z-index: 2;
+}
+.lib-diamond-line {
+  position: sticky;
+  top: 190px;
+  height: 2px;
+  background-color: #000;
+  width: 100%;
+  z-index: 2;
+}
+
+.lib-diamond-line::before, 
+.lib-diamond-line::after {
+  content: "";
+  position: absolute;
+  top: -3.25px; 
+  width: 8px; 
+  height: 8px; 
+  background-color: #000;
+  transform: rotate(45deg); 
+}
+
+.lib-diamond-line::before {
+  left: -2px; 
+}
+
+.lib-diamond-line::after {
+  right: -2px; 
+}
+.square {
+  background-color: #f4f1e3;
+  height: 90px;
+  margin: 0;
+  width: 70%;
+  position: fixed; 
+  top: 110px; 
+  z-index: 1; 
+}
+  
