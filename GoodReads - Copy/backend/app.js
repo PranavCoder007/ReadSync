@@ -23,7 +23,10 @@ app.use(
         credentials: true,
     })
 );
-
+app.options('*', cors({
+  origin: 'https://readsync-frontend.onrender.com',
+  credentials: true,
+}));
 app.use(express.json());
 
 app.use(user);
