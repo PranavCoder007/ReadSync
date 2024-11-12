@@ -9,7 +9,7 @@ const TrendingBooksChart = () => {
   useEffect(() => {
     const fetchChartData = async () => {
       try {
-        const response = await fetch('http://localhost:8000/charts');
+        const response = await fetch('https://readsync-backend.onrender.com/charts');
         const result = await response.json();
         if (result.success) {
           setData(result.data);
