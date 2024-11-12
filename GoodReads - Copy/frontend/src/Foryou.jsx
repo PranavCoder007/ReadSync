@@ -35,7 +35,7 @@ const Foryou = () => {
             const username = localStorage.getItem("userlocal");
             const searchItems = JSON.parse(localStorage.getItem("searchItems"));
 
-            const response = await axios.post("http://localhost:8000/recommendations", {
+            const response = await axios.post("https://readsync-backend.onrender.com/recommendations", {
             username,
             searchItems,
             });  
