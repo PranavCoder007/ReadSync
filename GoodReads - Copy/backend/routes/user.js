@@ -190,7 +190,7 @@ router.post("/Login", async (req, res) => {
     res.cookie("jwt", token, {
       path: "/",
       httpOnly: true,
-      sameSite: "Lax", 
+      sameSite: "None", 
       secure: true,   
     });
 
