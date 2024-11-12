@@ -30,7 +30,7 @@ const Bookinfo = () => {
     const handleAddToLibrary = async () => {
 
         try {
-            const response = await axios.post('http://localhost:8000/addlib', { 
+            const response = await axios.post('https://readsync-backend.onrender.com/addlib', { 
                 userId: userId, 
                 bookTitle: book.title 
             });
@@ -50,7 +50,7 @@ const Bookinfo = () => {
     const handleRemoveToLibrary = async () => {
 
         try {
-            const response = await axios.post('http://localhost:8000/removelib', { 
+            const response = await axios.post('https://readsync-backend.onrender.com/removelib', { 
                 userId: userId, 
                 bookTitle: book.title 
             });
