@@ -19,6 +19,11 @@ app.use(
         origin: "http://localhost:5173",
         credentials: true,
     })
+    
+    cors({
+            origin: "https://readsync-frontend.onrender.com",
+            credentials: true,
+        })
 );
 
 app.use(express.json());
