@@ -31,7 +31,7 @@ const Slider = () => {
     
     const fetchTrendingBooks = async () => {
         try {
-            const response = await fetch('http://localhost:8000/trending');  
+            const response = await fetch('https://readsync-backend.onrender.com/trending');  
             const trendingData = await response.json();
             setData(trendingData.books);  
         } catch (error) {
