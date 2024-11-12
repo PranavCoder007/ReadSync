@@ -12,7 +12,7 @@ const GenreDistributionPieChart = () => {
     // Fetch genre distribution data from backend
     const fetchData = async () => {
       try {
-        const response = await axios.get('http://localhost:8000/user-library-genre-distribution');
+        const response = await axios.get('https://readsync-backend.onrender.com/user-library-genre-distribution');
         if (response.data.success) {
           setData(response.data.data);
         }
