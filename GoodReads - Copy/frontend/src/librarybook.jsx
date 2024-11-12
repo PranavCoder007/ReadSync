@@ -28,7 +28,7 @@ function librarybook({ book }) {
     console.log(newPageCount);
     if (newPageCount >= 0 && newPageCount <= totalPages) {
       try {
-        const response = await axios.post('http://localhost:8000/updatePagesRead', {
+        const response = await axios.post('https://readsync-backend.onrender.com/updatePagesRead', {
           userId: storedUsername,
           bookTitle: book.title,
           pagesRead: newPageCount
