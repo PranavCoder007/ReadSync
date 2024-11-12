@@ -16,7 +16,7 @@ const Navbar = () => {
   const handleKeyDown = async (event) => {
     if (event.key === 'Enter') {
       try {
-        const response = await axios.post('http://localhost:8000/search', { 
+        const response = await axios.post('https://readsync-backend.onrender.com/search', { 
           title: searchValue, 
         });
   
@@ -46,7 +46,7 @@ const Navbar = () => {
   };
   const handleLogout = async() => {
       try{
-        const response = await axios.get('http://localhost:8000/Logout', { 
+        const response = await axios.get('https://readsync-backend.onrender.com/Logout', { 
           withCredentials: true // Ensures cookies are included in requests
         });
         
