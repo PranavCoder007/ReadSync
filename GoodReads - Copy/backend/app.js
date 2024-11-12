@@ -16,14 +16,12 @@ app.listen(process.env.PORT || 8000)
 app.use(cookieParser());
 app.use(
     cors({
-        origin: "http://localhost:5173",
+        origin: [
+      "http://localhost:5173", // For local development
+      "https://readsync-frontend.onrender.com" // For production
+    ],
         credentials: true,
     })
-    
-    cors({
-            origin: "https://readsync-frontend.onrender.com",
-            credentials: true,
-        })
 );
 
 app.use(express.json());
